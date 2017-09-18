@@ -4,6 +4,8 @@ This ansible recipe builds root-cern.
 
 ## Run
 
+Adjust the `inventory/group_vars/local.yml` file. Set your machine user and the desired verion of root
+
 Build root-cern on the host machine running the following command from the repo directory:
 
     ansible-playbook -i inventory/hosts.yml local-root-cern.yml --ask-sudo-pass -vvvv
