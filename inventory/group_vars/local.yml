@@ -1,5 +1,5 @@
-local_user: dario
-local_group: dario
+local_user: user
+local_group: user
 local_user_id: 1000
 local_group_id: 1000
 user_dir: "/home/{{ local_user }}"
