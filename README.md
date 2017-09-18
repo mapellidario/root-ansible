@@ -12,7 +12,7 @@ Build root-cern on the host machine running the following command from the repo 
 
 This playbook requires that the host machine has ansible v2.2, since the argument `remote_src` of the module `unarchive` was not present before.
 
-It may be possible to install root-cern on some guest machines by changing the inventory. Te requirements would then be having ansible v2.2 installed on the host machine and having an ssh connection to the guest machines.
+It may be possible to install root-cern on some guest machines by changing the inventory. The requirements would then be having ansible v2.2 installed on the host machine and having an ssh connection to the guest machines.
 
 ## Details
 
