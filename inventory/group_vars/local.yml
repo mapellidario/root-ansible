@@ -1,0 +1,19 @@
+local_user: dario
+local_group: dario
+local_user_id: 1000
+local_group_id: 1000
+user_dir: "/home/{{ local_user }}"
+
+# ROOT-CERN
+root_cern_base_dir: "{{ user_dir }}/software"
+root_cern_dir: "{{ root_cern_base_dir }}/root"
+
+root_cern_version: "6.10.02"
+
+root_cern_archive: "root_v{{ root_cern_version }}.source.tar.gz"
+root_cern_source: "{{ root_cern_dir}}/root-{{ root_cern_version }}"
+root_cern_build: "{{ root_cern_dir }}/root-{{ root_cern_version }}-build"
+root_cern_install: "{{ root_cern_dir }}/root-{{ root_cern_version }}-install"
+
+root_cern_load_command: "\n# root\nsource {{ root_cern_install }}/bin/thisroot.sh"
+root_cern_load_file: "{{ user_dir }}/.bashrc"
